@@ -13,8 +13,12 @@ app.post('/api/saque', (req, res) => {
     return res.status(400).json({ error: "Valor inválido" });
   }
 
-  const resultado = calculateChange(valor);
-  res.json(resultado);
+  try {
+    const resultado = calculateChange(valor);
+    res.json(resultado);
+  } catch (e){
+    res.json({ error: e.message });
+  }
 });
 
 const PORT = 5000; 
