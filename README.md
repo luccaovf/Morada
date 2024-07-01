@@ -14,6 +14,8 @@ O meu instinto inicial para solucionar o problema foi uma abordagem de algoritmo
 ## Instruções de uso
 Para utilizar o código desse repositório você deve ter nodejs instalado, assim como um gerenciador de pacotes como npm ou yarn para instalar as dependências (nesse caso somente o express), geralmente ao instalar o node o npm também é instalado. Eu utilizei o npm e para as próximas instruções vou considerar ele como gerenciador de pacotes a ser usado.
 
-Tendo isso em mente, você pode baixar o código aqui pelo github no botão {c:green}Code{/c} > Download ZIP, ou clonando o repositório, caso você tenha git instalado, com o comando `git clone https://github.com/seu-usuario/seu-repositorio.git`.
+Tendo isso em mente, você pode baixar o código aqui pelo github no botão <font color=\"red\">Code</font> > Download ZIP, ou clonando o repositório, caso você tenha git instalado, com o comando `git clone https://github.com/seu-usuario/seu-repositorio.git`.
+
 Com o código baixado vá para a pasta Codigo e instale as dependências com o comando `npm install`. Após, incie a aplicação com o comando `node index.js`.
+
 Para fazer requisições para a API você pode usar sua linha de comando com o comando: `curl -X POST http://localhost:5000/api/saque -H "Content-Type: application/json" -d "{\"valor\": 500}"` (epecifique o valor desejado em {\"valor\": xxx}) ou usando um aplicativo como postman.
